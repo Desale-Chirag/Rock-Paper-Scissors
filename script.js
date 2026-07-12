@@ -27,19 +27,19 @@ let CompPick;
         if(CompPick === 'Rock'){
             score.loss += 1;
             localStorage.setItem('score',JSON.stringify(score));
-            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="IMAGES/${s}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="IMAGES/${CompPick}-emoji.png">`;
+            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="Images/${s}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="Images/${CompPick}-emoji.png">`;
             result.innerText = 'You Loss.'
         // alert('You Picked a Scissors And Computer Picked Rock That means You Loss.');
         }else if(CompPick === 'Paper'){
             score.wins += 1;
             localStorage.setItem('score',JSON.stringify(score));
-            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="IMAGES/${s}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="IMAGES/${CompPick}-emoji.png">`;
+            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="Images/${s}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="Images/${CompPick}-emoji.png">`;
             result.innerText = 'You Win.'
         // alert('You Picked a Scissors And Computer Picked Paper That means You Won.');
         }else if(CompPick === 'Scissors'){
             score.tie += 1;
             localStorage.setItem('score',JSON.stringify(score));
-            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="IMAGES/${s}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="IMAGES/${CompPick}-emoji.png">`;
+            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="Images/${s}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="Images/${CompPick}-emoji.png">`;
             result.innerText = 'Tie.'
         // alert('You Picked a Scissors And Computer Also That means its a Tie.')
     }
@@ -49,19 +49,19 @@ let CompPick;
         if(CompPick === 'Rock'){
             score.tie += 1;
             localStorage.setItem('score',JSON.stringify(score));
-            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="IMAGES/${r}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="IMAGES/${CompPick}-emoji.png">`;
+            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="Images/${r}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="Images/${CompPick}-emoji.png">`;
             result.innerText = 'Tie.'
         // alert('You Picked a Rock And Computer Also That means its a Tie.');
         }else if(CompPick === 'Paper'){
             score.loss += 1;
             localStorage.setItem('score',JSON.stringify(score));
-            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="IMAGES/${r}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="IMAGES/${CompPick}-emoji.png">`;
+            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="Images/${r}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="Images/${CompPick}-emoji.png">`;
             result.innerText = 'You Loss.'
         // alert('You Picked a Rock And Computer Picked Paper That means You Loss.');
         }else if(CompPick === 'Scissors'){
             score.wins += 1;
             localStorage.setItem('score',JSON.stringify(score));
-            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="IMAGES/${r}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="IMAGES/${CompPick}-emoji.png">`;
+            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="Images/${r}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="Images/${CompPick}-emoji.png">`;
             result.innerText = 'You Win.'
         // alert('You Picked a Rock And Computer Picked Scissors That means You won.')
     }
@@ -71,19 +71,19 @@ let CompPick;
         if(CompPick === 'Rock'){
             score.wins += 1;
             localStorage.setItem('score',JSON.stringify(score));
-            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="IMAGES/${p}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="IMAGES/${CompPick}-emoji.png">`;
+            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="Images/${p}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="Images/${CompPick}-emoji.png">`;
             result.innerText = 'You Win.'
         // alert('You Picked a Paper And Computer Picked Rock That means You won.');
         }else if(CompPick === 'Paper'){
             score.tie += 1;
             localStorage.setItem('score',JSON.stringify(score));
-            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="IMAGES/${p}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="IMAGES/${CompPick}-emoji.png">`;
+            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="Images/${p}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="Images/${CompPick}-emoji.png">`;
             result.innerText = 'Tie.'
         // alert('You Picked a Paper And Computer Also That means its a Tie.');
         }else if(CompPick === 'Scissors'){
             score.loss += 1;
             localStorage.setItem('score',JSON.stringify(score));
-            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="IMAGES/${p}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="IMAGES/${CompPick}-emoji.png">`;
+            show.innerHTML = `Your Pick : <img class="img-panel-mini" src="Images/${p}-emoji.png"> , Computer Pick : <img class="img-panel-mini" src="Images/${CompPick}-emoji.png">`;
             result.innerText = 'You Loss.'
         // alert('You Picked a Paper And Computer Picked Scissors That means You Loss.')
     }

@@ -8,7 +8,8 @@
 </head>
 <body>
     <div class="body">
-    <h2>Rock Paper Scissors</h2>
+    <h2 class="css-h2">Rock Paper Scissors</h2>
+    <div class="button-sec">
     <button class="btn" onclick="
     PickComputerMove(); 
     checkarR(CompPick);
@@ -24,9 +25,11 @@
     checkarS(CompPick);
     scorecard.innerText =`Wins : ${score.wins}, Losses : ${score.loss}, Ties : ${score.tie}`;
     "><img class="img-panel" src="Images/Scissors-emoji.png" alt=""></button>
+    </div>
     <p class = "js-result css-result"></p>
     <p class ="js-ShowPick"></p>
     <p class="js-scorecard"></p>
+    <div class="button-sec">
     <button class="css-reset" onclick="
     localStorage.removeItem('score');
     score.wins = 0;
@@ -37,6 +40,11 @@
     scorecard.innerText =`Wins : ${score.wins}, Losses : ${score.loss}, Ties : ${score.tie}`;
     ">Reset Button  
     </button>
+    <button class="css-repeat" onclick="
+    repeatAuto();
+    // scorecard.innerText =`Wins : ${score.wins}, Losses : ${score.loss}, Ties : ${score.tie}`;
+    ">Repeat</button>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>

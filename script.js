@@ -12,6 +12,30 @@ let CompPick;
     let result = document.querySelector('.js-result');
     // result.innerText = 'You Win.'
     let show = document.querySelector('.js-ShowPick');
+    let isAutoRepeat = false;
+    let intervalId;
+    function pickAutoMove(){
+        const num = Math.random();
+        PickComputerMove();
+        if(num >= 0 && num < 1/3){
+            checkarR(CompPick);
+        }else if(num >= 1/3 && num < 2/3){
+            checkarP(CompPick);
+        }else{
+            checkarS(CompPick);
+        }
+        scorecard.innerText =`Wins : ${score.wins}, Losses : ${score.loss}, Ties : ${score.tie}`;
+    }
+    function repeatAuto(){
+        console.log('repeat button clicked');
+        if(!isAutoRepeat){
+        isAutoRepeat = true;
+        intervalId = setInterval(pickAutoMove, 1000);
+    }else{
+        isAutoRepeat = false;
+        clearInterval(intervalId);
+    }      
+    }
     function PickComputerMove(){
     const NumRan3 = Math.random();
     if(NumRan3 >= 0 && NumRan3 < 1/3){
